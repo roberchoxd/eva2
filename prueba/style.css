@@ -1,0 +1,136 @@
+/* Estilos generales */
+body {
+    font-family: algerian, sans-serif;
+    background-color: #111;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    width: 800%;
+}
+
+header {
+    background-color: #333;
+    padding: auto ;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #eee;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    min-width: 400px;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.dark{
+    width: 100%;
+    height: auto;
+}
+
+/* contacto */
+.vista{
+    width: 150px;
+    height: 90px;
+}
+
+/* build y npc*/
+
+table{
+    width: 80%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid darkgray;
+    font-family: algerian, sans-serif;
+}
+th {
+    background-color: darkgrey;
+}
+
+.builds{
+    text-align: center;
+}
+.Solaire{
+    width: 150px;
+    height: 90px;
+}
+
+
+/* estilo de telefono */
+@media (max-width: 768px) {
+    
+    img {
+    width: 150px;
+    height: 90px;
+        }
+    .dark{
+    width: 150px;
+    height: 90px;
+        }
+    body{
+    font-size: 16px;
+        }
+
+    input[type="text"], input[type="email"], textarea, input[type=submit] {
+    font-size: 14px; /* Tamaño del texto */
+    width: 100%; /* Ancho del campo de entrada */
+    height: 40px; /* Altura del campo de entrada */
+    margin-top: 10px; /* Espacio entre elementos */
+        }   
+}
+
+@media (min-width: 769px){
+
+    img {
+    width: 200px;
+    height: 120px;
+        }
+    .dark{
+    width: 200px;
+    height: 120px;
+        }
+    body{
+    font-size: 18px;
+        }
+
+    input[type="text"], input[type="email"], textarea, input[type=submit] {
+    font-size: 16px; /* Tamaño del texto */
+    width: 300px; /* Ancho del campo de entrada */
+    height: 50px; /* Altura del campo de entrada */
+    margin-bottom: 20px; /* Espacio entre elementos */
+
+        }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>el Recorrido de dark souls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>el recorrido de dark souls</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Quienes somos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#other">Otra</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <div>empezemos por el principio que es dark soul, bueno es un juego creado por Hidetaka Miyazaki de la compañia FromSoftware</div>
+            <div>dado a su gran dificultad muchas personas se estresan mucho a jugarlo, pero logran una gran sastifacion a terminar una etapa</div>
+            <div>dark soul tiene un gran camino desde Demon's Souls hasta el juego mas reciente elden ring a continuacion  unas imagenes de estos grandiosos juegos</div>
+            <img src="GemRaOZaCMhGxQ9dRhnQQyT5.webp" alt="demon´s_soul">
+            <img src="Dark_Souls_Portada.webp" alt="dark_souls1">
+            <img class="dark" src="header.jpg" alt="dark_souls2">
+            <img src="Dark_Souls_III_Portada.webp" alt="dark_souls3">
+            <img src="aGhopp3MHppi7kooGE2Dtt8C.webp" alt="elden_Ring">
+        </section><br><br>
+        <section id="about">
+            <h2>Quienes somos</h2>
+            <div>
+                somos un grupo que le interesa usar los juegos para intentar ayudar a las personas en sus vida diaria
+                aun que este juego es dificil y mas de uno lo dejara, queremos apoyar a esas personas a probarlo
+                apretar a la imagen para motivarte
+            </div>
+            <a href="https://www.youtube.com/watch?v=9BajI0c0WI4">
+                <img src="mj17.jpg" alt="">
+            </a>
+            <p>ver el video desde el minuto 20 </p>
+        </section><br><br>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>¡Contactanos!</p>
+            <form id="contacto" action="vista.html">
+                <label>Nombre:</label><br>
+                <input type="text" name="fname"><br>
+                <label>Correo electronico</label><br>
+                <input type="email" name="correo"><br>
+                <input type="submit" value="Enviar"><br>
+
+                <script>
+                    document.getElementById("contacto").addEventListener("submit", function(event){
+                        event.preventDefault();
+                
+                        window.location.href="vista.html";
+                    }
+                )
+                </script>
+            </form>
+        </section><br><br>
+        <section id="other" action="build.html">
+            <h2>Otra</h2>
+            <p>denos un comentario con su build favorita o npc favorito adios</p>
+            <form id="coment">
+            <label>comentario</label><br>
+            <textarea name="mensaje"></textarea><br>
+            <input type="submit" value="Enviar"><br>
+            
+            
+            <script>
+                document.getElementById("other").addEventListener("submit", function(event){
+                    event.preventDefault();
+            
+                    window.location.href="build.html";
+                }
+            )
+            </script>
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+        <p>© 2024 Dark Souls</p>
+    </footer>
+</body>
+</html>
